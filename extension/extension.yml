@@ -1,0 +1,37 @@
+schema_version: "1.0"
+
+extension:
+  id: "feature-governance-guard"
+  name: "Feature Governance Guard"
+  version: "1.0.0"
+  description: "Runs mandatory semantic governance review after tasks and before implementation."
+  author: "Local Governance"
+  repository: "https://github.com/ahhakopian/speckit-feature-governance"
+  license: "MIT"
+
+requires:
+  speckit_version: ">=0.16.2,<0.17.0"
+
+provides:
+  commands:
+    - name: "speckit.feature-governance-guard.review"
+      file: "commands/speckit.feature-governance.review.md"
+      description: "Review Feature boundaries, forward evolution, tasks, and backward exceptions."
+
+hooks:
+  after_tasks:
+    command: "speckit.feature-governance-guard.review"
+    priority: 5
+    optional: false
+    description: "Validate Feature governance after task generation."
+
+  before_implement:
+    command: "speckit.feature-governance-guard.review"
+    priority: 5
+    optional: false
+    description: "Block implementation when Feature governance is unresolved."
+
+tags:
+  - "architecture"
+  - "governance"
+  - "review"

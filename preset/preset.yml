@@ -1,0 +1,48 @@
+schema_version: "1.0"
+
+preset:
+  id: "feature-governance"
+  name: "Feature Governance"
+  version: "1.0.0"
+  description: "Enforces forward-oriented Feature boundaries and controlled backward exceptions in Spec Kit workflows."
+  author: "Local Governance"
+  repository: "https://github.com/ahhakopian/speckit-feature-governance"
+  license: "MIT"
+
+requires:
+  speckit_version: ">=0.16.2,<0.17.0"
+
+provides:
+  templates:
+    - type: "command"
+      name: "speckit.specify"
+      file: "commands/speckit.specify.md"
+      description: "Add Feature-boundary governance to specification."
+      replaces: "speckit.specify"
+      strategy: "prepend"
+
+    - type: "command"
+      name: "speckit.plan"
+      file: "commands/speckit.plan.md"
+      description: "Add forward-evolution governance to planning."
+      replaces: "speckit.plan"
+      strategy: "prepend"
+
+    - type: "command"
+      name: "speckit.tasks"
+      file: "commands/speckit.tasks.md"
+      description: "Prevent unauthorized backward work from entering tasks."
+      replaces: "speckit.tasks"
+      strategy: "prepend"
+
+    - type: "command"
+      name: "speckit.analyze"
+      file: "commands/speckit.analyze.md"
+      description: "Add cross-Feature governance checks to analysis."
+      replaces: "speckit.analyze"
+      strategy: "prepend"
+
+tags:
+  - "architecture"
+  - "governance"
+  - "brownfield"
