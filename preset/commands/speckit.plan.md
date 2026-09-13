@@ -3,19 +3,14 @@
 
 These instructions apply in addition to the standard `speckit.plan` workflow.
 
-## 1. Synchronize and load the global policy
+## 1. Load the installed native policy
 
-Run the governance bootstrap before planning. Resolve `SPECKIT_FEATURE_GOVERNANCE_HOME` when set; otherwise use `~/.config/speckit-feature-governance`.
+Read and apply the policy shipped with the installed
+`feature-governance-guard` extension:
 
-```bash
-python3 "${SPECKIT_FEATURE_GOVERNANCE_HOME:-$HOME/.config/speckit-feature-governance}/bootstrap/specify-governed.py" ensure-project --project-root . --quiet
-```
+`.specify/extensions/feature-governance-guard/docs/feature-architecture-policy.md`
 
-If it reports `GOVERNANCE_UPDATED_RESTART_REQUIRED` (exit code 75), STOP and ask the user to invoke the command again. If governance cannot be loaded, STOP.
-
-Read and apply:
-
-`<governance-home>/extension/docs/feature-architecture-policy.md`
+If that native extension policy cannot be loaded, STOP.
 
 ## 2. Treat Earlier Features as established upstream architecture
 

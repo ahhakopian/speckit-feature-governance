@@ -3,7 +3,7 @@ schema_version: "1.0"
 extension:
   id: "feature-governance-guard"
   name: "Feature Governance Guard"
-  version: "1.0.0"
+  version: "1.0.1"
   description: "Runs mandatory semantic governance review after tasks and before implementation."
   author: "Local Governance"
   repository: "https://github.com/ahhakopian/speckit-feature-governance"

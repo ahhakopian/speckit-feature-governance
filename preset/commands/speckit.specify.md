@@ -3,23 +3,15 @@
 
 These instructions apply in addition to the standard `speckit.specify` workflow.
 
-## 1. Synchronize governance first
+## 1. Load the installed native policy
 
-Before doing specification work, run the global governance bootstrap in `ensure-project` mode. Resolve the governance home from `SPECKIT_FEATURE_GOVERNANCE_HOME` when set; otherwise use `~/.config/speckit-feature-governance`.
+Read the policy shipped with the installed `feature-governance-guard` extension:
 
-Preferred command on Unix-like systems:
+`.specify/extensions/feature-governance-guard/docs/feature-architecture-policy.md`
 
-```bash
-python3 "${SPECKIT_FEATURE_GOVERNANCE_HOME:-$HOME/.config/speckit-feature-governance}/bootstrap/specify-governed.py" ensure-project --project-root . --quiet
-```
-
-If the bootstrap reports `GOVERNANCE_UPDATED_RESTART_REQUIRED` (exit code 75), STOP and ask the user to invoke the same Spec Kit command again so the refreshed command/skill is loaded. If governance cannot be loaded, STOP rather than silently continuing without it.
-
-Then read the global policy from:
-
-`<governance-home>/extension/docs/feature-architecture-policy.md`
-
-Treat that file as binding for this Spec Kit invocation. Do not apply it to ordinary Codex work outside Spec Kit.
+If that native extension policy cannot be loaded, STOP rather than silently
+continuing without it. Treat it as binding for this Spec Kit invocation only;
+do not apply it to ordinary Codex work outside Spec Kit.
 
 ## 2. Apply Feature Boundary Design while running the core workflow
 

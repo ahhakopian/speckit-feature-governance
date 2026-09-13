@@ -3,7 +3,7 @@ schema_version: "1.0"
 preset:
   id: "feature-governance"
   name: "Feature Governance"
-  version: "1.0.0"
+  version: "1.0.1"
   description: "Enforces forward-oriented Feature boundaries and controlled backward exceptions in Spec Kit workflows."
   author: "Local Governance"
   repository: "https://github.com/ahhakopian/speckit-feature-governance"
