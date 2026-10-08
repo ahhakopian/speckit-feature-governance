@@ -60,3 +60,7 @@ When creating it:
 - DO NOT mark the exception `APPROVED` yourself.
 
 If approval is required, surface the exception to the user and stop at the architectural decision boundary.
+
+## Verification Platform integration
+
+Read `.specify/extensions/feature-governance-guard/docs/verification-integration.md` and apply its conditional plan obligations. Preserve current proof budgets, approval boundaries and task progress. Resolve only the project-pinned platform resources; absence is a blocker for applicable proof.

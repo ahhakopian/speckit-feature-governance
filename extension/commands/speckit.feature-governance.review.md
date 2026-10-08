@@ -125,3 +125,7 @@ Use when backward impact may be architecturally necessary but is missing a valid
 Use when the Current Feature violates the policy and a correct forward-only solution exists, when an exception is justified only by convenience/cleanliness, when Feature ordering/evidence is too ambiguous for a safe decision, or when the global policy cannot be loaded.
 
 For `EXCEPTION_REQUIRED` or `BLOCK`, explicitly instruct the parent Spec Kit workflow to STOP. Do not continue into implementation and do not repair the artifacts automatically. Human review decides the next action.
+
+## Conditional browser/native proof
+
+Read `../docs/verification-integration.md`. For adopted applicable proof, derive the feature-root JSON explicitly, call the pinned platform structural validator once and review semantic coverage, support/task ordering and compatibility. Non-applicability must be justified. Planned provider delivery is not required before development readiness; real exports are required at verification. Existing hooks and approval authority remain unchanged.

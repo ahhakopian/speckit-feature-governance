@@ -7,8 +7,8 @@ and `before_implement`.
 
 ## Components
 
-- `preset/` — `feature-governance@1.0.1`
-- `extension/` — `feature-governance-guard@1.0.1`
+- `preset/` — `feature-governance@1.1.0`
+- `extension/` — `feature-governance-guard@1.1.0`
 
 ## Installation from GitHub
 
@@ -17,7 +17,7 @@ SpecKit project (a directory containing `.specify/`). Clone the pinned source
 tag, then install both components with the native local/dev mechanism:
 
 ```bash
-git clone --branch v1.0.1 \
+git clone --branch v1.1.0 \
   https://github.com/ahhakopian/speckit-feature-governance.git \
   ~/tools/speckit-feature-governance
 
@@ -37,8 +37,8 @@ specify preset list
 specify extension list
 ```
 
-The lists should show `feature-governance` at `v1.0.1` and enabled, and
-`feature-governance-guard` at `v1.0.1` with status `Enabled`.
+The lists should show `feature-governance` at `v1.1.0` and enabled, and
+`feature-governance-guard` at `v1.1.0` with status `Enabled`.
 
 ## Greenfield integration
 

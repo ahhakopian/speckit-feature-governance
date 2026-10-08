@@ -52,3 +52,7 @@ Before `speckit.specify` is considered complete, ensure the resulting `spec.md` 
 Keep the section architectural and concise. Do not turn `spec.md` into an implementation plan.
 
 If the requested behavior appears to require changing an Earlier Feature, record the potential conflict in the Current Feature specification, preserve the Earlier Feature, and defer the architectural necessity decision to planning. Do not create or approve a backward exception during specification merely for convenience.
+
+## Verification Platform integration
+
+Read `.specify/extensions/feature-governance-guard/docs/verification-integration.md` and identify current irreducible proof obligations from governing sources. Specify requires no platform installation or runtime. Preserve current proof budgets, approval boundaries and task progress; applicable pinned proof resources are checked at the subsequent Plan boundary.

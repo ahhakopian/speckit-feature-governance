@@ -43,3 +43,7 @@ Before declaring `tasks.md` complete, scan the generated tasks for:
 - refactors justified only by cleanliness or convenience.
 
 Resolve any such item forward, or require the Backward Exception Protocol.
+
+## Verification Platform integration
+
+Read `.specify/extensions/feature-governance-guard/docs/verification-integration.md` and apply its conditional tasks obligations. Preserve current proof budgets, approval boundaries and task progress. Resolve only the project-pinned platform resources; absence is a blocker for applicable proof.

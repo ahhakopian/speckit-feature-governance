@@ -39,3 +39,7 @@ Examples include:
 - an exception justified only by cleanliness, convenience, fewer adapters, or less duplication.
 
 Keep this command read-only. Report findings; do not rewrite specs, plans, tasks, Earlier Features, or exception approval status.
+
+## Verification Platform integration
+
+Read `.specify/extensions/feature-governance-guard/docs/verification-integration.md` and apply its conditional analyze obligations. Preserve current proof budgets, approval boundaries and task progress. Resolve only the project-pinned platform resources; absence is a blocker for applicable proof.
